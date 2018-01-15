@@ -45,7 +45,7 @@
   fileInputs[0].name = 'avatar';
   fileInputs[1].name = 'images';
 
-  fileInputs.forEach(function (input) {
+  [].forEach.call(fileInputs, function (input) {
     input.accept = '.gif, .jpg, .jpeg, .png';
     input.addEventListener('change', onInputChange);
   });

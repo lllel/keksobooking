@@ -16,8 +16,8 @@
   var getFeaturesItemElem = function (feature) {
     var featureItem = document.createElement('li');
 
-    featureItem.classList.add('feature');
-    featureItem.classList.add('feature--' + feature);
+    featureItem.className = '';
+    featureItem.classList.add('feature', 'feature--' + feature);
 
     return featureItem;
   };
